@@ -1,10 +1,8 @@
 # UNER-OEKG-Hackathon
 
-Universal Named Entity Recognition (UNER) is a framework hierarchy composed of 3 levels:
+Universal Named Entity Recognition (UNER) is a framework hierarchy composed of 5 levels:
 
-- 1st: 8 broad categories 
-- 2nd: 47 named-entity types
-- 3rd: 69 subtypes
+![alt text](https://github.com/cleopatra-itn/UNER-OEKG-Hackathon/commit/afe5a8c7bba2baa75762c2522801ef2b7cda1237)
 
 3-step Data-set creation:
 

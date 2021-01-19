@@ -1,6 +1,6 @@
 ### Get birthdate of fictional characters
 
-`
+```
 SELECT ?person ?birthDate ?label
 WHERE
 {
@@ -8,4 +8,4 @@ WHERE
  ?person rdfs:label ?label .
  ?person sem:hasBeginTimeStamp ?birthDate
 }
-`
+```

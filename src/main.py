@@ -4,9 +4,11 @@ import urllib.parse
 import numpy as np
 import math
 from jsonmerge import merge
+import pandas as pd
+import json
 
 from rdflib import URIRef, BNode, Literal, Namespace, Graph
-from rdflib.namespace import CSVW, DC, DCAT, DCTERMS, DOAP, FOAF, ODRL2, ORG, OWL, \
+from rdflib.namespace import DC, DCAT, DCTERMS, DOAP, FOAF, ODRL2, ORG, OWL, \
     PROF, PROV, RDF, RDFS, SH, SKOS, SOSA, SSN, TIME, \
     VOID, XMLNS, XSD
 
@@ -14,54 +16,86 @@ SO = Namespace('http://schema.org/')
 OEKG_R = Namespace("http://oekg.l3s.uni-hannover.de/resource/")
 OEKG_S = Namespace("http://oekg.l3s.uni-hannover.de/schema/")
 SEM = Namespace('http://semanticweb.cs.vu.nl/2009/11/sem/')
-
-OEKG_R = Namespace("oekg.l3s.uni-hannover.de/uner/")
-
-url = "http://smldapi.l3s.uni-hannover.de/" #"http://localhost:4567/" # This needs to be changed
+UNER = Namespace("http://oekg.l3s.uni-hannover.de/uner/")
+DBO = Namespace('http://dbpedia.org/ontology/')
+url = "http://smldapi.l3s.uni-hannover.de/" 
 graph = "uner"
 
-def insert_example_triples():
+files = ["output/UNER_OEKG_entities.tsv", "output/UNER_OEKG_entities_hr.tsv"]
+
+def insert_schema(file):
+    with open(file, "r") as f:
+        lines = f.readlines()
+    g = Graph()
+    for line in lines:
+        if len(line.split(" ")) == 4:
+            s, p, o, _ = line.split(" ")
+        else:
+            s, p, o = line.split(" ")
+        s = s[5:]
+        o = o[4:].strip()
+        # add triples of first news article
+        if p[:4] == "rdfs":
+            g.add((URIRef(UNER)+s, RDFS.subClassOf, URIRef(UNER)+o))
+        else:
+            g.add((URIRef(UNER)+s, RDF.type, OWL.Class))
+
+    file = open("uner_schema.nt", "w")
+    file.write(g.serialize(format='nt').decode("utf-8"))
+    file.close()
+    # Upload the file into to the OEKG,
+    uploadFileToOEKG(graph, "uner_schema.nt")
+
+def insert_triples(files):
 
     # reset graph
-    clear_graph(graph)
-
-    # Joe Biden in Wikidata: https://www.wikidata.org/wiki/Q6279
-    biden_wikidata_id = "Q6279"
-
-    # Second inauguration of Obama in Wikidata: https://www.wikidata.org/wiki/Q3526570
-    obama_inauguration_wikidata_id = "Q3526570"
-
-    # Query the OEKG API to get its IDs of the Wikidata entities
-    oekg_ids = getOEKGIdsByWikidataIds(biden_wikidata_id, obama_inauguration_wikidata_id)
-    print(oekg_ids)
-
-    # create a set of triples describing two news articles with titles and main entities
+    #clear_graph(graph)
     g = Graph()
+    for file in files:
+        tsv_read = pd.read_csv(file, sep='\t')
+        ids = tsv_read["id"]
+        classes = tsv_read["uner-class"]
+        classes, ids = list(classes), list(ids)
+        for entity_id, entity_class in zip(ids, classes):
+            entity_id = entity_id.strip()
+            if entity_class == "Name-Person-Name":
+                entity_class = "Name-Person-Name_Person"
+            oekg_id = entity_id
+            #print(oekg_id)
+            entity_class = entity_class.split("-")[-1].strip()
+            # add triples 
+            g.add((URIRef(OEKG_R)+oekg_id, RDF.type, URIRef(UNER)+entity_class))
 
-    # add triples of first news article
-    g.add((OEKG_R.article1, RDF.type, SO.Article))
-    g.add((OEKG_R.article1, SO.mainEntity, URIRef(oekg_ids[biden_wikidata_id], OEKG_R)))
-    g.add((OEKG_R.article1, SO.headline, Literal('Bidens wins election.', 'en')))
-
-    # add triples of second news article
-    g.add((OEKG_R.article2, RDF.type, SO.Article))
-    g.add((OEKG_R.article2, SO.mainEntity, URIRef(oekg_ids[obama_inauguration_wikidata_id], OEKG_R)))
-    g.add((OEKG_R.article2, SO.headline, Literal("Obama inaugurated the second time.", "en")))
-
-    # Write triples into a file "example_articles.ttl".
-    file = open("example_articles.nt", "w")
+    # Write triples into a file 
+    file = open("uner_triples.nt", "w")
     file.write(g.serialize(format='nt').decode("utf-8"))
     file.close()
 
     # Upload the file into to the OEKG, using the example graph
-    uploadFileToOEKG(graph, "example_articles.nt")
+    uploadFileToOEKG(graph, "uner_triples.nt")
 
-    # Run an example query
-    query = ("SELECT ?title WHERE { "
-              "?article so:mainEntity ?mainEntity .  "
-              "?mainEntity owl:sameAs dbr:Joe_Biden . "
-              "?article dcterms:title ?title . }")
-    query_oekg(query)
+def correspondences(file):
+    g = Graph()
+    with open(file) as f:
+        c=json.load(f)
+    for db_class in c:
+        uner_class = c[db_class]
+        if  not uner_class:
+            continue
+        else:
+            uner_class = uner_class.split("-")[-1].strip()
+            if uner_class == db_class:
+                g.add((URIRef(UNER)+uner_class, OWL.equivalentClass, URIRef(DBO)+db_class))
+            else:
+                g.add((URIRef(UNER)+uner_class, SKOS.narrower, URIRef(DBO)+db_class))
+
+    file = open("correspondences.nt", "w")
+    file.write(g.serialize(format='nt').decode("utf-8"))
+    file.close()
+    # Upload the file into to the OEKG,
+    uploadFileToOEKG(graph, "correspondences.nt")
+
+
 
 def uploadFileToOEKG(graph, file_name):
     print("uploadFileToOEKG: " + url + "upload/"+graph)
@@ -110,4 +144,13 @@ def query_oekg(query):
 
 
 if __name__ == '__main__':
-    insert_example_triples()
+    print("1")
+    #clear_graph(graph)
+    print("2")
+    #insert_schema("schema.txt")
+    print("3")
+    #insert_triples(files)
+    print("4")
+    correspondences("dbpedia_uner_mapping_v1.json")
+
+    #clear_graph(graph)

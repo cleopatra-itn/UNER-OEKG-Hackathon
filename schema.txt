@@ -1,0 +1,262 @@
+uner:Name_Product rdf:type owl:Class .
+uner:Weapon rdf:type owl:Class .
+uner:Object rdf:type owl:Class .
+uner:Object rdfs:subClassOf owl:Weapon
+uner:Weapon rdfs:subClassOf owl:Name_Product
+uner:Name rdf:type owl:Class .
+uner:Color rdf:type owl:Class .
+uner:Color rdfs:subClassOf owl:Name
+uner:Disease rdf:type owl:Class .
+uner:Disease rdfs:subClassOf owl:Name
+uner:Event rdf:type owl:Class .
+uner:Historical_Event rdf:type owl:Class .
+uner:Historical_Event rdfs:subClassOf owl:Event
+uner:Event rdfs:subClassOf owl:Name
+uner:Natural_Phenomenon rdf:type owl:Class .
+uner:Natural rdf:type owl:Class .
+uner:Earthquake rdf:type owl:Class .
+uner:Earthquake rdfs:subClassOf owl:Natural
+uner:Natural rdfs:subClassOf owl:Natural_Phenomenon
+uner:Natural_Phenomenon rdfs:subClassOf owl:Event
+uner:Occasion_Other rdf:type owl:Class .
+uner:Occasion_Other rdfs:subClassOf owl:Event
+uner:Occasion rdf:type owl:Class .
+uner:Conference rdf:type owl:Class .
+uner:Conference rdfs:subClassOf owl:Occasion
+uner:Occasion rdfs:subClassOf owl:Event
+uner:Game rdf:type owl:Class .
+uner:Game rdfs:subClassOf owl:Occasion
+uner:MilitaryConflict rdf:type owl:Class .
+uner:MilitaryConflict rdfs:subClassOf owl:Occasion
+uner:Occasion_Other rdfs:subClassOf owl:Occasion
+uner:Facility rdf:type owl:Class .
+uner:Archaeological_Place rdf:type owl:Class .
+uner:Archaeological_Place_Other rdf:type owl:Class .
+uner:Archaeological_Place_Other rdfs:subClassOf owl:Archaeological_Place
+uner:Archaeological_Place rdfs:subClassOf owl:Facility
+uner:Facility rdfs:subClassOf owl:Name
+uner:Facility_Other rdf:type owl:Class .
+uner:Facility_Other rdfs:subClassOf owl:Facility
+uner:GOE rdf:type owl:Class .
+uner:Airport rdf:type owl:Class .
+uner:Airport rdfs:subClassOf owl:GOE
+uner:GOE rdfs:subClassOf owl:Facility
+uner:Amusement_Park rdf:type owl:Class .
+uner:Amusement_Park rdfs:subClassOf owl:GOE
+uner:GOE_Other rdf:type owl:Class .
+uner:GOE_Other rdfs:subClassOf owl:GOE
+uner:Market rdf:type owl:Class .
+uner:Market rdfs:subClassOf owl:GOE
+uner:Museum rdf:type owl:Class .
+uner:Museum rdfs:subClassOf owl:GOE
+uner:Park rdf:type owl:Class .
+uner:Park rdfs:subClassOf owl:GOE
+uner:School rdf:type owl:Class .
+uner:School rdfs:subClassOf owl:GOE
+uner:Sports_Facility rdf:type owl:Class .
+uner:Sports_Facility rdfs:subClassOf owl:GOE
+uner:Station rdf:type owl:Class .
+uner:Station rdfs:subClassOf owl:GOE
+uner:Theater rdf:type owl:Class .
+uner:Theater rdfs:subClassOf owl:GOE
+uner:Worship_Place rdf:type owl:Class .
+uner:Worship_Place rdfs:subClassOf owl:GOE
+uner:Line rdf:type owl:Class .
+uner:Bridge rdf:type owl:Class .
+uner:Bridge rdfs:subClassOf owl:Line
+uner:Line rdfs:subClassOf owl:Facility
+uner:Canal rdf:type owl:Class .
+uner:Canal rdfs:subClassOf owl:Line
+uner:Railroad rdf:type owl:Class .
+uner:Railroad rdfs:subClassOf owl:Line
+uner:Road rdf:type owl:Class .
+uner:Road rdfs:subClassOf owl:Line
+uner:Tunnel rdf:type owl:Class .
+uner:Tunnel rdfs:subClassOf owl:Line
+uner:Location rdf:type owl:Class .
+uner:Astral_Body rdf:type owl:Class .
+uner:Astral_Body_Other rdf:type owl:Class .
+uner:Astral_Body_Other rdfs:subClassOf owl:Astral_Body
+uner:Astral_Body rdfs:subClassOf owl:Location
+uner:Location rdfs:subClassOf owl:Name
+uner:Star rdf:type owl:Class .
+uner:Star rdfs:subClassOf owl:Astral_Body
+uner:Constellation rdf:type owl:Class .
+uner:Constellation rdfs:subClassOf owl:Location
+uner:Geological_Region_Island rdf:type owl:Class .
+uner:Geological_Region_Island rdfs:subClassOf owl:Location
+uner:Geological_Region_Mountain rdf:type owl:Class .
+uner:Geological_Region_Mountain rdfs:subClassOf owl:Location
+uner:Geological_Region rdf:type owl:Class .
+uner:Geological_Region_Other rdf:type owl:Class .
+uner:Geological_Region_Other rdfs:subClassOf owl:Geological_Region
+uner:Geological_Region rdfs:subClassOf owl:Location
+uner:Geological_Region rdfs:subClassOf owl:Geological_Region
+uner:Lake rdf:type owl:Class .
+uner:Lake rdfs:subClassOf owl:Geological_Region
+uner:River rdf:type owl:Class .
+uner:River rdfs:subClassOf owl:Geological_Region
+uner:Sea rdf:type owl:Class .
+uner:Sea rdfs:subClassOf owl:Geological_Region
+uner:GPE rdf:type owl:Class .
+uner:City rdf:type owl:Class .
+uner:City rdfs:subClassOf owl:GPE
+uner:GPE rdfs:subClassOf owl:Location
+uner:Country rdf:type owl:Class .
+uner:Country rdfs:subClassOf owl:GPE
+uner:GPE_Other rdf:type owl:Class .
+uner:GPE_Other rdfs:subClassOf owl:GPE
+uner:Location_Other rdf:type owl:Class .
+uner:Location_Other rdfs:subClassOf owl:Location
+uner:Planet rdf:type owl:Class .
+uner:Planet rdfs:subClassOf owl:Location
+uner:Region rdf:type owl:Class .
+uner:Continental_Region rdf:type owl:Class .
+uner:Continental_Region rdfs:subClassOf owl:Region
+uner:Region rdfs:subClassOf owl:Location
+uner:Region_Other rdf:type owl:Class .
+uner:Region_Other rdfs:subClassOf owl:Region
+uner:Natural_Object rdf:type owl:Class .
+uner:Compound rdf:type owl:Class .
+uner:Compound rdfs:subClassOf owl:Natural_Object
+uner:Natural_Object rdfs:subClassOf owl:Name
+uner:Living_Thing_Part rdf:type owl:Class .
+uner:Living_Thing_Part rdfs:subClassOf owl:Living_Thing_Part
+uner:Living_Thing_Part rdfs:subClassOf owl:Natural_Object
+uner:Living_Thing rdf:type owl:Class .
+uner:Amphibian rdf:type owl:Class .
+uner:Amphibian rdfs:subClassOf owl:Living_Thing
+uner:Living_Thing rdfs:subClassOf owl:Natural_Object
+uner:Bird rdf:type owl:Class .
+uner:Bird rdfs:subClassOf owl:Living_Thing
+uner:Fish rdf:type owl:Class .
+uner:Fish rdfs:subClassOf owl:Living_Thing
+uner:Fungus rdf:type owl:Class .
+uner:Fungus rdfs:subClassOf owl:Living_Thing
+uner:Insect rdf:type owl:Class .
+uner:Insect rdfs:subClassOf owl:Living_Thing
+uner:Living_Thing_Other rdf:type owl:Class .
+uner:Living_Thing_Other rdfs:subClassOf owl:Living_Thing
+uner:Mammal rdf:type owl:Class .
+uner:Mammal rdfs:subClassOf owl:Living_Thing
+uner:Mollusc_Arthropod rdf:type owl:Class .
+uner:Mollusc_Arthropod rdfs:subClassOf owl:Living_Thing
+uner:Plant rdf:type owl:Class .
+uner:Plant rdfs:subClassOf owl:Living_Thing
+uner:Reptile rdf:type owl:Class .
+uner:Reptile rdfs:subClassOf owl:Living_Thing
+uner:Mineral rdf:type owl:Class .
+uner:Mineral rdfs:subClassOf owl:Natural_Object
+uner:Organization rdf:type owl:Class .
+uner:Corporation rdf:type owl:Class .
+uner:Company rdf:type owl:Class .
+uner:Company rdfs:subClassOf owl:Corporation
+uner:Corporation rdfs:subClassOf owl:Organization
+uner:Organization rdfs:subClassOf owl:Name
+uner:CompanyName rdf:type owl:Class .
+uner:Facility rdfs:subClassOf owl:CompanyName
+uner:CompanyName rdfs:subClassOf owl:Corporation
+uner:Ethnic_Group_other rdf:type owl:Class .
+uner:Ethnic_Group_other rdfs:subClassOf owl:Organization
+uner:Organization_Other rdf:type owl:Class .
+uner:Organization_Other rdfs:subClassOf owl:Organization
+uner:Political_Organization rdf:type owl:Class .
+uner:Government rdf:type owl:Class .
+uner:Government rdfs:subClassOf owl:Political_Organization
+uner:Political_Organization rdfs:subClassOf owl:Organization
+uner:Military rdf:type owl:Class .
+uner:Military rdfs:subClassOf owl:Political_Organization
+uner:Political_Party rdf:type owl:Class .
+uner:Political_Party rdfs:subClassOf owl:Political_Organization
+uner:Show_Organization rdf:type owl:Class .
+uner:Show_Organization rdfs:subClassOf owl:Organization
+uner:Sports_Organization rdf:type owl:Class .
+uner:Pro_Sports_Organization rdf:type owl:Class .
+uner:Pro_Sports_Organization rdfs:subClassOf owl:Sports_Organization
+uner:Sports_Organization rdfs:subClassOf owl:Organization
+uner:Sports_League rdf:type owl:Class .
+uner:Sports_League rdfs:subClassOf owl:Sports_Organization
+uner:Person rdf:type owl:Class .
+uner:Fictional rdf:type owl:Class .
+uner:Fictional rdfs:subClassOf owl:Person
+uner:Person rdfs:subClassOf owl:Name
+uner:Name_Person rdf:type owl:Class .
+uner:Name_Person rdfs:subClassOf owl:Person
+uner:Other rdf:type owl:Class .
+uner:Other rdfs:subClassOf owl:Person
+uner:Place rdf:type owl:Class .
+uner:Location_Other rdfs:subClassOf owl:Place
+uner:Place rdfs:subClassOf owl:Name
+uner:Product rdf:type owl:Class .
+uner:Art rdf:type owl:Class .
+uner:Art_Other rdf:type owl:Class .
+uner:Art_Other rdfs:subClassOf owl:Art
+uner:Art rdfs:subClassOf owl:Product
+uner:Product rdfs:subClassOf owl:Name
+uner:Book rdf:type owl:Class .
+uner:Book rdfs:subClassOf owl:Art
+uner:Broadcast_Program rdf:type owl:Class .
+uner:Broadcast_Program rdfs:subClassOf owl:Art
+uner:Movie rdf:type owl:Class .
+uner:Movie rdfs:subClassOf owl:Art
+uner:Music rdf:type owl:Class .
+uner:Music rdfs:subClassOf owl:Art
+uner:Award rdf:type owl:Class .
+uner:Award rdfs:subClassOf owl:Product
+uner:Doctrine_Method rdf:type owl:Class .
+uner:Culture rdf:type owl:Class .
+uner:Culture rdfs:subClassOf owl:Doctrine_Method
+uner:Doctrine_Method rdfs:subClassOf owl:Product
+uner:Doctrine_Method_Other rdf:type owl:Class .
+uner:Doctrine_Method_Other rdfs:subClassOf owl:Doctrine_Method
+uner:Sport rdf:type owl:Class .
+uner:Sport rdfs:subClassOf owl:Doctrine_Method
+uner:Drug rdf:type owl:Class .
+uner:Substance rdf:type owl:Class .
+uner:Substance rdfs:subClassOf owl:Drug
+uner:Drug rdfs:subClassOf owl:Product
+uner:Food_Other rdf:type owl:Class .
+uner:Food_Other rdfs:subClassOf owl:Product
+uner:Language rdf:type owl:Class .
+uner:Language_Other rdf:type owl:Class .
+uner:Language_Other rdfs:subClassOf owl:Language
+uner:Language rdfs:subClassOf owl:Product
+uner:National_Language rdf:type owl:Class .
+uner:National_Language rdfs:subClassOf owl:Language
+uner:Printing rdf:type owl:Class .
+uner:Magazine rdf:type owl:Class .
+uner:Magazine rdfs:subClassOf owl:Printing
+uner:Printing rdfs:subClassOf owl:Product
+uner:Newspaper rdf:type owl:Class .
+uner:Newspaper rdfs:subClassOf owl:Printing
+uner:Printing_Other rdf:type owl:Class .
+uner:Printing_Other rdfs:subClassOf owl:Printing
+uner:Product_Other rdf:type owl:Class .
+uner:Product_Other rdfs:subClassOf owl:Product
+uner:Unit rdf:type owl:Class .
+uner:Currency rdf:type owl:Class .
+uner:Currency rdfs:subClassOf owl:Unit
+uner:Unit rdfs:subClassOf owl:Product
+uner:Vehicle rdf:type owl:Class .
+uner:Aircraft rdf:type owl:Class .
+uner:Aircraft rdfs:subClassOf owl:Vehicle
+uner:Vehicle rdfs:subClassOf owl:Product
+uner:Car rdf:type owl:Class .
+uner:Car rdfs:subClassOf owl:Vehicle
+uner:Ship rdf:type owl:Class .
+uner:Ship rdfs:subClassOf owl:Vehicle
+uner:Spaceship rdf:type owl:Class .
+uner:Spaceship rdfs:subClassOf owl:Vehicle
+uner:Train rdf:type owl:Class .
+uner:Train rdfs:subClassOf owl:Vehicle
+uner:Vehicle_Other rdf:type owl:Class .
+uner:Vehicle_Other rdfs:subClassOf owl:Vehicle
+uner:Time_TOP rdf:type owl:Class .
+uner:Time_TOP_Other rdf:type owl:Class .
+uner:Time_TOP_Other rdfs:subClassOf owl:Time_TOP
+uner:Timex rdf:type owl:Class .
+uner:Holiday rdf:type owl:Class .
+uner:Holiday rdfs:subClassOf owl:Timex
+uner:Timex rdfs:subClassOf owl:Time_TOP
+uner:Time rdf:type owl:Class .
+uner:Time rdfs:subClassOf owl:Timex

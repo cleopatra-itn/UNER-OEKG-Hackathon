@@ -1,98 +1,97 @@
-- 	uner-class	uner-class
-- Name-Person-Name_Person	0.4332590562205439	65913
-- Name-Location-GPE-City	0.12732937626944843	19371
-- Name-Location-GPE-GPE_Other	0.09876226722670295	15025
-- Name-Organization-Sports_Organization-Pro_Sports_Organization	0.04037914193501738	6143
-- Name-Product-Art-Music	0.03078884923060743	4684
-- Name-Organization-Corporation-Company	0.02694352967469254	4099
-- Name-Natural_Object-Living_Thing-Plant	0.022756403936029658	3462
-- Name-Organization-Show_Organization	0.021336593638461084	3246
-- Time_TOP-Timex-Time	0.01607146378497762	2445
-- Name-Product-Product_Other	0.012311595774749726	1873
-- Name-Person-Fictional	0.008729204051717905	1328
-- Name-Location-Geological_Region_Island	0.007868115399025852	1197
-- Name-Product-Art-Movie	0.007684065916007704	1169
-- Name-Organization-Organization_Other	0.007302820558327253	1111
-- Name-Location-Geological_Region_Mountain	0.006454878297279355	982
-- Name-Product-Art-Broadcast_Program	0.0063299875766598965	963
-- Name-Natural_Object-Living_Thing-Insect	0.006165657681107978	938
-- Name-Location-Geological_Region-River	0.005731826756850913	872
-- Name-Location-Location_Other	0.004851018516692631	738
-- Name-Event-Occasion-Game	0.00475242057936148	723
-- Name-Product-Vehicle-Aircraft	0.004561797900521254	694
-- Name-Product-Vehicle-Car	0.004515785529766717	687
-- Name-Facility-GOE-Sports_Facility	0.004436907179901796	675
-- Name-Facility-GOE-GOE_Other	0.004404041200791413	670
-- Name-Natural_Object-Living_Thing-Living_Thing_Other	0.004331736046748569	659
-- Name-Location-GPE-Country	0.004173979347018727	635
-- Name-Product-Art-Book	0.004088527801331729	622
-- Name-Natural_Object-Living_Thing-Reptile	0.003917624709957735	596
-- Name-Product-Weapon-Object	0.0038913319266694274	592
-- Name-Facility-GOE-School	0.0037401484227616625	569
-- Name-Organization-Sports_Organization-Sports_League	0.0032668783235721374	497
-- Name-Product-Printing-Newspaper	0.0030631092530877587	466
-- Name-Natural_Object-Living_Thing-Mammal	0.0029447917282903776	448
-- Name-Organization-Corporation-CompanyName-Facility-GOE-School	0.0028987793575358405	441
-- Name-Natural_Object-Living_Thing-Fish	0.0026818638954073082	408
-- Name-Organization-Ethnic_Group_other	0.0024452288458125457	372
-- Name-Location-Astral_Body-Astral_Body_Other	0.0022940453419047807	349
-- Name-Product-Printing-Magazine	0.002280898950260627	347
-- Name-Facility-Facility_Other	0.0019982515299113274	304
-- Name-Product-Vehicle-Ship	0.0019719587466230206	300
-- Name-Location-Planet	0.001939092767512637	295
-- Name-Product-Printing-Printing_Other	0.0019193731800464069	292
-- Name-Organization-Political_Organization-Military	0.0017944824594269488	273
-- Name-Product-Doctrine_Method-Culture	0.0016761649346295675	255
-- Name-Organization-Political_Organization-Political_Party	0.0016761649346295675	255
-- Name-Natural_Object-Living_Thing-Mollusc_Arthropod	0.0016761649346295675	255
-- Name-Person-Other	0.0016432989555191838	250
-- Name-Location-Geological_Region-Lake	0.0015841401931204933	241
-- Name-Natural_Object-Living_Thing-Bird	0.0014921154516114189	227
-- Name-Product-Food_Other	0.001465822668323112	223
-- Name-Organization-Political_Organization-Government	0.0012883463811270402	196
-- Name-Location-Astral_Body-Star	0.0011568824646855055	176
-- Name-Natural_Object-Compound	0.0011503092688634287	175
-- Name-Natural_Object-Living_Thing-Fungus	0.0010845773106426613	165
-- Name-Facility-Line-Road	0.0009465401983790499	144
-- Name-Place-Location_Other	0.0009136742192686662	139
-- Name-Event-Occasion_Other	0.0008742350443362058	133
-- Name-Product-Language-National_Language	0.0008676618485141291	132
-- Name-Facility-GOE-Museum	0.0008676618485141291	132
-- Name-Event-Occasion-Occasion_Other	0.0008413690652258222	128
-- Name-Facility-Archaeological_Place-Archaeological_Place_Other	0.0007427711278946711	113
-- Name-Product-Award	0.0007427711278946711	113
-- Name-Location-Geological_Region-Geological_Region_Other	0.0007164783446063642	109
-- Name-Natural_Object-Living_Thing_Part-Living_Thing_Part	0.0006047340156310597	92
-- Name-Disease	0.0005061360782999087	77
-- Name-Product-Language-Language_Other	0.0004995628824778319	76
-- Name-Product-Art-Art_Other	0.0004929896866557551	75
-- Time_TOP-Timex-Holiday	0.00046669690336744823	71
-- Name-Event-Occasion-MilitaryConflict	0.00044697731590121804	68
-- Name-Facility-GOE-Worship_Place	0.0004141113367908343	63
-- Name-Product-Doctrine_Method-Sport	0.0004075381409687576	62
-- Name-Product-Drug-Substance	0.0003943917493246041	60
-- Name-Product-Vehicle-Spaceship	0.00030236700781552985	46
-- Name-Facility-GOE-Station	0.0002826474203492996	43
-- Name-Event-Historical_Event	0.00024978144123891593	38
-- Name-Facility-GOE-Airport	0.00023006185377268573	35
-- Name-Product-Vehicle-Train	0.00022348865795060902	34
-- Name-Facility-Line-Bridge	0.00021691546212853228	33
-- Name-Product-Vehicle-Vehicle_Other	0.00019062267884022532	29
-- Name-Facility-GOE-Park	0.00016432989555191838	25
-- Name-Product-Unit-Currency	0.00015775669972984164	24
-- Name-Location-Geological_Region-Geological_Region-Geological_Region_Other	0.0001314639164415347	20
-- Name-Natural_Object-Living_Thing-Amphibian	0.00012489072061945796	19
-- Name-Facility-GOE-Theater	0.00011174432897530451	17
-- Name-Color	9.859793733115103e-05	15
-- Name-Product-Doctrine_Method-Doctrine_Method_Other	9.859793733115103e-05	15
-- Name-Facility-Line-Railroad	8.545154568699756e-05	13
-- Name-Location-Geological_Region-Sea	7.230515404284409e-05	11
-- Name-Natural_Object-Mineral	5.2585566576613885e-05	8
-- Name-Facility-GOE-Amusement_Park	4.601237075453715e-05	7
-- Name-Facility-GOE-Market	3.943917493246041e-05	6
-- Name-Location-Region-Continental_Region	3.943917493246041e-05	6
-- Name-Location-Constellation	2.6292783288306942e-05	4
-- Name-Location-Region-Region_Other	2.6292783288306942e-05	4
-- Name-Event-Occasion-Conference	1.3146391644153471e-05	2
-- Name-Facility-Line-Tunnel	6.5731958220767356e-06	1
-- 
+#	normalized-unmatched-count	unmatched-count	total-class-count	normalized-unmatched-count
+Name-Person-Name_Person	0.4377690156775268	55735	65913	0.8455843308603765
+Name-Location-GPE-City	0.11090514939206383	14120	19371	0.7289246812245108
+Name-Location-GPE-GPE_Other	0.09254924754155015	11783	15025	0.7842262895174709
+Name-Organization-Sports_Organization-Pro_Sports_Organization	0.04338810518709353	5524	6143	0.8992349015139183
+Name-Organization-Corporation-Company	0.02797763046278551	3562	4099	0.8689924371797999
+Name-Natural_Object-Living_Thing-Plant	0.026901567752678376	3425	3462	0.989312536106297
+Name-Product-Art-Music	0.02673662383361086	3404	4684	0.726729291204099
+Name-Organization-Show_Organization	0.021513399729806152	2739	3246	0.8438077634011091
+Time_TOP-Timex-Time	0.019204184862860914	2445	2445	1.0
+Name-Product-Product_Other	0.012143014232303875	1546	1873	0.8254137746930059
+Name-Person-Fictional	0.009928053033397216	1264	1328	0.9518072289156626
+Name-Product-Art-Movie	0.008176505702346916	1041	1169	0.8905047048759623
+Name-Organization-Organization_Other	0.007948726004587011	1012	1111	0.9108910891089109
+Name-Location-Geological_Region_Island	0.007540293443086494	960	1197	0.8020050125313283
+Name-Natural_Object-Living_Thing-Insect	0.007210405604951459	918	938	0.9786780383795309
+Name-Product-Art-Broadcast_Program	0.006621320179710327	843	963	0.8753894080996885
+Name-Location-Geological_Region_Mountain	0.006150051839517421	783	982	0.7973523421588594
+Name-Location-Geological_Region-River	0.005623802192968676	716	872	0.8211009174311926
+Name-Location-Location_Other	0.005191806214458513	661	738	0.8956639566395664
+Name-Product-Vehicle-Car	0.005183951742121965	660	687	0.9606986899563319
+Name-Event-Occasion-Game	0.005160388325112319	657	723	0.9087136929460581
+Name-Natural_Object-Living_Thing-Living_Thing_Other	0.005042571240064093	642	659	0.9742033383915023
+Name-Product-Vehicle-Aircraft	0.004806937069967639	612	694	0.8818443804034583
+Name-Facility-GOE-Sports_Facility	0.004547739482861541	579	675	0.8577777777777778
+Name-Location-GPE-Country	0.0044770492318326055	570	635	0.8976377952755905
+Name-Facility-GOE-GOE_Other	0.004469194759496057	569	670	0.8492537313432836
+Name-Product-Art-Book	0.00440635898080367	561	622	0.9019292604501608
+Name-Natural_Object-Living_Thing-Reptile	0.004280687423418895	545	596	0.9144295302013423
+Name-Facility-GOE-School	0.004233560589399604	539	569	0.9472759226713533
+Name-Product-Weapon-Object	0.003966508529956957	505	592	0.8530405405405406
+Name-Organization-Sports_Organization-Sports_League	0.003573784913129536	455	497	0.9154929577464789
+Name-Product-Printing-Newspaper	0.0032046247133117596	408	466	0.8755364806866953
+Name-Natural_Object-Living_Thing-Mammal	0.0031889157686386628	406	448	0.90625
+Name-Natural_Object-Living_Thing-Fish	0.0031810612963021146	405	408	0.9926470588235294
+Name-Organization-Corporation-CompanyName-Facility-GOE-School	0.0029846994878884037	380	441	0.8616780045351474
+Name-Organization-Ethnic_Group_other	0.0026705205944264664	340	372	0.9139784946236559
+Name-Product-Printing-Magazine	0.002497722203022401	318	347	0.9164265129682997
+Name-Product-Vehicle-Ship	0.00215212542021427	274	300	0.9133333333333333
+Name-Facility-Facility_Other	0.002042162807502592	260	304	0.8552631578947368
+Name-Product-Printing-Printing_Other	0.002010744918156398	256	292	0.8767123287671232
+Name-Organization-Political_Organization-Military	0.0019950359734833014	254	273	0.9304029304029304
+Name-Natural_Object-Living_Thing-Mollusc_Arthropod	0.0019950359734833014	254	255	0.996078431372549
+Name-Organization-Political_Organization-Political_Party	0.001822237582079236	232	255	0.9098039215686274
+Name-Location-Planet	0.001806528637406139	230	295	0.7796610169491526
+Name-Person-Other	0.0017908196927330423	228	250	0.912
+Name-Natural_Object-Living_Thing-Bird	0.0017436928587137516	222	227	0.9779735682819384
+Name-Location-Astral_Body-Astral_Body_Other	0.0017358383863772032	221	349	0.6332378223495702
+Name-Product-Doctrine_Method-Culture	0.001696566024694461	216	255	0.8470588235294118
+Name-Location-Geological_Region-Lake	0.0016180213013289766	206	241	0.8547717842323651
+Name-Product-Food_Other	0.0016101668289924282	205	223	0.9192825112107623
+Name-Natural_Object-Compound	0.0013666781865594268	174	175	0.9942857142857143
+Name-Organization-Political_Organization-Government	0.0013195513525401364	168	196	0.8571428571428571
+Name-Natural_Object-Living_Thing-Fungus	0.0012959879355304911	165	165	1.0
+Name-Location-Astral_Body-Star	0.0012017342674919098	153	176	0.8693181818181818
+Name-Facility-Line-Road	0.0010132269314147475	129	144	0.8958333333333334
+Name-Place-Location_Other	0.001005372459078199	128	139	0.920863309352518
+Name-Event-Occasion_Other	0.0009739545697320054	124	133	0.9323308270676691
+Name-Event-Occasion-Occasion_Other	0.0009189732633761664	117	128	0.9140625
+Name-Facility-GOE-Museum	0.0009189732633761664	117	132	0.8863636363636364
+Name-Product-Award	0.0008168651230010368	104	113	0.9203539823008849
+Name-Location-Geological_Region-Geological_Region_Other	0.0007461748719721009	95	109	0.8715596330275229
+Name-Product-Language-National_Language	0.0007383203996355525	94	132	0.7121212121212122
+Name-Natural_Object-Living_Thing_Part-Living_Thing_Part	0.0006990480379528103	89	92	0.967391304347826
+Name-Facility-Archaeological_Place-Archaeological_Place_Other	0.0005890854252411323	75	113	0.6637168141592921
+Name-Disease	0.0005183951742121964	66	77	0.8571428571428571
+Name-Product-Art-Art_Other	0.0005183951742121964	66	75	0.88
+Name-Event-Occasion-MilitaryConflict	0.0004948317572025511	63	68	0.9264705882352942
+Time_TOP-Timex-Holiday	0.00047912281252945427	61	71	0.8591549295774648
+Name-Product-Language-Language_Other	0.0004634138678563574	59	76	0.7763157894736842
+Name-Product-Doctrine_Method-Sport	0.000455559395519809	58	62	0.9354838709677419
+Name-Product-Drug-Substance	0.0004398504508467121	56	60	0.9333333333333333
+Name-Facility-GOE-Worship_Place	0.00040057808916396995	51	63	0.8095238095238095
+Name-Product-Vehicle-Spaceship	0.0003298878381350341	42	46	0.9130434782608695
+Name-Facility-GOE-Station	0.0003141788934619372	40	43	0.9302325581395349
+Name-Facility-GOE-Airport	0.0002591975871060982	33	35	0.9428571428571428
+Name-Event-Historical_Event	0.00024348864243300134	31	38	0.8157894736842105
+Name-Product-Vehicle-Vehicle_Other	0.0002277796977599045	29	29	1.0
+Name-Facility-Line-Bridge	0.00021992522542335605	28	33	0.8484848484848485
+Name-Product-Vehicle-Train	0.00021992522542335605	28	34	0.8235294117647058
+Name-Product-Unit-Currency	0.00017279839140406548	22	24	0.9166666666666666
+Name-Facility-GOE-Park	0.00017279839140406548	22	25	0.88
+Name-Natural_Object-Living_Thing-Amphibian	0.00014923497439442017	19	19	1.0
+Name-Location-Geological_Region-Geological_Region-Geological_Region_Other	0.00014923497439442017	19	20	0.95
+Name-Facility-GOE-Theater	0.00011781708504822646	15	17	0.8823529411764706
+Name-Product-Doctrine_Method-Doctrine_Method_Other	0.00011781708504822646	15	15	1.0
+Name-Color	0.00010996261271167803	14	15	0.9333333333333333
+Name-Facility-Line-Railroad	9.425366803858117e-05	12	13	0.9230769230769231
+Name-Location-Geological_Region-Sea	7.069025102893588e-05	9	11	0.8181818181818182
+Name-Natural_Object-Mineral	6.283577869238744e-05	8	8	1.0
+Name-Facility-GOE-Amusement_Park	4.712683401929058e-05	6	7	0.8571428571428571
+Name-Location-Region-Continental_Region	4.712683401929058e-05	6	6	1.0
+Name-Facility-GOE-Market	4.712683401929058e-05	6	6	1.0
+Name-Location-Constellation	3.141788934619372e-05	4	4	1.0
+Name-Location-Region-Region_Other	2.356341700964529e-05	3	4	0.75
+Name-Event-Occasion-Conference	1.570894467309686e-05	2	2	1.0
+Name-Facility-Line-Tunnel	7.85447233654843e-06	1	1	1.0

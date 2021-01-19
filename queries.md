@@ -37,3 +37,18 @@ WHERE
 
 
 ```
+### All broadcast programs in Greece
+```
+SELECT DISTINCT ?eq ?label ?eventDate ?place ?loclabel
+WHERE
+{
+  ?eq rdf:type uner:Broadcast_Program .
+  ?eq sem:hasBeginTimeStamp ?eventDate .
+  ?eq rdfs:label ?label .
+  ?eq sem:hasPlace ?place .
+  ?place rdfs:label ?loclabel .
+  ?place so:containedInPlace ?y .
+  ?y owl:sameAs dbr:Greece .
+ 
+} 
+```

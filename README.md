@@ -19,7 +19,7 @@ Universal Named Entity Recognition (UNER) is a framework hierarchy composed of 5
 - [Doc](output/README.md)
 
 ### Sample queries
-[Doc](queries.md)
+- [Doc](queries.md)
 
 ### UNER Hierachy
 ![alt text](https://github.com/cleopatra-itn/MIDAS/blob/master/uner-documentation/UNER_scheme_v1.0.svg)

@@ -1,4 +1,4 @@
-### Statistics of UNER classes which did not match with OEKG
+### Statistics of EN UNER classes which did not match with OEKG
 ## - 	uner-class	uner-class
 - Name-Person-Name_Person	0.25627264900151636	159541
 - Name-Organization-Corporation-Company	0.06477614433678583	40326

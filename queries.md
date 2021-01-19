@@ -9,3 +9,16 @@ WHERE
  ?person sem:hasBeginTimeStamp ?birthDate
 }
 ```
+
+### Get all holidays 
+```
+SELECT ?event ?eventDate ?label
+WHERE
+{
+  
+ ?event rdf:type uner:Holiday .
+ ?event rdfs:label ?label .
+ ?event sem:hasBeginTimeStamp ?eventDate
+        
+}
+```

@@ -22,3 +22,18 @@ WHERE
         
 }
 ```
+
+### Get all earthquakes with date and location
+```
+SELECT DISTINCT ?eq ?label ?eventDate ?place ?loclabel
+WHERE
+{
+  ?eq rdf:type uner:Earthquake .
+  ?eq sem:hasPlace ?place .
+  ?eq rdfs:label ?label .
+  ?place rdfs:label ?loclabel .
+  ?eq sem:hasBeginTimeStamp ?eventDate
+} 
+
+
+```

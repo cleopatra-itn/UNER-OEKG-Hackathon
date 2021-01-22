@@ -9,10 +9,10 @@ Run with list_entities_EN_v1
 - 152133  = total UNER entities 
 - 24817 =  OEKG matched entities
 
-## Things to do
-- Run with 
-  - list_entities_HR_v1
-    - 24817
-  - list_entities_EN_v1
-    - 186191 
-- As an output, put the entities that were not found in the query.
+## Statistics
+- Matched entities
+   - [en](uner-class-en-v1-distribution-with-percentage.tsv)
+   - [hr](uner-class-hr-v1-distribution-with-percentage.tsv)
+- Non-matched entities
+  - [en](ner-class-en-v1-non-matched-distribution-with-percentage.tsv)
+  - [hr](ner-class-hr-v1-non-matched-distribution-with-percentage.tsv)
